@@ -1,1 +1,1 @@
-# Blog-on-OpenCV
+# Blog on OpenCV
