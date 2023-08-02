@@ -133,6 +133,7 @@ OpenCV offers programming interfaces for languages such as Python, C++, Java, an
 Books: "Learning OpenCV" by Adrian Kaehler and Gary Bradski, and "Mastering OpenCV with Practical Computer Vision Projects" by Daniel Lélis Baggio and Shervin Emami are highly regarded resources for learning OpenCV.
 
 Now that you're armed with the knowledge to unleash the extraordinary power of OpenCV, go ahead, explore the realms of image processing, and create masterpieces that captivate the world!
+
 ---
 
 
