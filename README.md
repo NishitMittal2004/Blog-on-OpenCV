@@ -20,8 +20,13 @@ For beginners, OpenCV presents an exciting opportunity to dive into the fascinat
 ## II. Getting Started with OpenCV
 Before we plunge into the journey with OpenCV, let's first get everything set up and ready to roll.
 
+![Getting Started with OpenCV](https://media.geeksforgeeks.org/wp-content/uploads/20211109175827/GettingStartedwithPythonOpenCV.png)
+
 ### A. Installing OpenCV on different operating systems
 Installing OpenCV doesn't have to be a challenging or tedious task. Depending on your operating system, there are a few steps you need to follow to get OpenCV up and running.
+
+![Operating Systems](https://jumpcloud.com/wp-content/uploads/2016/07/hi-res-logos.png)
+
 ##### Windows
 1.	Head over to the official OpenCV website (https://opencv.org) and download the pre-built binaries for Windows.
 2.	Extract the downloaded file and locate the installation folder.
