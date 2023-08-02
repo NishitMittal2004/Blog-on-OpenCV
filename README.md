@@ -4,12 +4,16 @@
 ## I. Introduction
 Image processing is a captivating realm that allows us to uncover hidden insights and unleash creativity through the manipulation of digital images. Various industries, from healthcare to entertainment, have been revolutionized by utilizing advanced and modern technology in this field. One such powerful technology that has earned its recognition is OpenCV.
 
+![Intro to OpenCV](https://drive.google.com/uc?export=download&id=1N8DVn8cLEHd74WRPb5J4b-5f_6G2Ohpj)
+
 ### A. Understanding the importance of image processing
 In today's visually-driven world, image processing holds immense significance. It enables us to analyze and interpret images, paving the way for advancements in facial recognition, autonomous vehicles, medical imaging, and much more. By mastering image processing techniques, one can embark on a journey to explore the depths of imagination and innovation.
 ### B. Introduction to OpenCV technology
 OpenCV is an open-source computer vision and image processing library that was built to provide a common infrastructure for computer vision applications. OpenCV, short for Open Source Computer Vision Library, provides us with a vast array of functions and algorithms to perform complex operations on images or even video streams. It serves as a valuable tool for both beginners and experts, unleashing the full potential of their image-processing endeavours. 
 ### C. Benefits of learning OpenCV for beginners
 For beginners, OpenCV presents an exciting opportunity to dive into the fascinating world of image processing. Its ample and substantial documentation and user-friendly interface make it a perfect starting point for anyone with a curious mind. Moreover, OpenCV offers a versatile skill set that can boost the likelihood of receiving exciting job opportunities as aspiring computer vision enthusiasts.
+
+![Featues of OpenCV](https://editor.analyticsvidhya.com/uploads/76231OpenCV-features.jpg)
 
 ---
 
