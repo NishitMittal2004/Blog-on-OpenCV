@@ -311,6 +311,9 @@ translated_image = cv2.warpAffine(image, translation_matrix, (image.shape[1], im
 ---
 ## VIII. Summary and Concluding Remarks
 As we reach the end of our extraordinary journey through OpenCV's universe of image processing, let's reflect on the magnificent concepts we've explored.
+
+<img src="https://www.cienotes.com/wp-content/uploads/2019/07/summaryblackboard.jpg" alt="Summary" width="600">
+
 ### A.	Recap of the essential concepts covered
 In this beginner's guide to OpenCV, we've uncovered the importance of image processing, dived into the installation and setup process, and explored the multiple features offered by OpenCV. From basic image manipulation to advanced object detection and tracking, we've barely scratched the surface of OpenCV's vast potential.
 ### B.	Highlighting the versatility and power of OpenCV
@@ -321,6 +324,9 @@ With OpenCV as our trusted ally, the journey through image processing has only j
 ---
 ## IX. Frequently Asked Questions (FAQs)
 Curious minds always have questions, so here are some answers to the most commonly asked questions about OpenCV and image processing.
+
+![FAQs](https://assets-global.website-files.com/5e78f62c08f1bb8c2d788576/6386109f6528fe6ecbe7c97a_a8zkm6bdfzbtq4w4zf6bt52tj50u1q1b.png)
+
 ### A.	What is OpenCV and why is it important for image processing?
 OpenCV is an open-source computer vision and image processing library that provides a vast array of functions and algorithms to manipulate digital images. It is important for image processing as it offers a comprehensive set of tools, enabling users to perform complex operations on images with relative ease.
 ### B.	Where can I download and install OpenCV?
@@ -332,7 +338,18 @@ OpenCV offers programming interfaces for languages such as Python, C++, Java, an
 ### E.	What are some recommended resources for further learning?
 Books: "Learning OpenCV" by Adrian Kaehler and Gary Bradski, and "Mastering OpenCV with Practical Computer Vision Projects" by Daniel Lélis Baggio and Shervin Emami are highly regarded resources for learning OpenCV.
 
+---
+
 Now that you're armed with the knowledge to unleash the extraordinary power of OpenCV, go ahead, explore the realms of image processing, and create masterpieces that captivate the world!
+
+![Thank You](https://t3.ftcdn.net/jpg/02/91/52/22/360_F_291522205_XkrmS421FjSGTMRdTrqFZPxDY19VxpmL.jpg)
+
+---
+Stay in touch with us to expand your horizons to the world of robots!! 
+
+Follow MARS on [GitHub](https://github.com/mars-tu), [Hashnode](https://botpad.hashnode.dev/), [LinkedIn](https://www.linkedin.com/company/mechatronics-and-robotics-society-tiet/), and [Instagram](https://www.instagram.com/mars_tiet/), Happy learning!! ✨
+
+![Mars](https://avatars.githubusercontent.com/u/83008506?s=280&v=4)
 
 ---
 
