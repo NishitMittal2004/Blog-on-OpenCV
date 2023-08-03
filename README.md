@@ -135,12 +135,34 @@ else:
 ```
 ### C. Image resizing, cropping, and rotation techniques
 Sometimes, we need to reshape our images to fit specific requirements. OpenCV grants us the power to resize our images, crop out portions that distract from the main focus, and rotate them to any desired angle. With OpenCV's toolbox at your service, your images will take on new dimensions of creativity.
+
+Here's the simplified format for image resizing, cropping, and rotation techniques using OpenCV in Python:
+```python
+# Image resizing
+new_width, new_height = 300, 200
+resized_image = cv2.resize(image, (new_width, new_height))
+
+# Image cropping
+x, y, w, h = 100, 50, 200, 150
+cropped_image = image[y:y+h, x:x+w]
+
+# Image rotation
+angle = 45
+rows, cols = image.shape[:2]
+rotation_matrix = cv2.getRotationMatrix2D((cols / 2, rows / 2), angle, 1)
+rotated_image = cv2.warpAffine(image, rotation_matrix, (cols, rows))
+```
 ### D. Adjusting image brightness, contrast, and saturation
 OpenCV empowers you to adjust image brightness, contrast, and saturation. Turn a dull image into a vibrant masterpiece or create moody atmospheres that transport the viewer to entirely different worlds.
+
+![Img brightness](https://i.stack.imgur.com/0uKBq.jpg)
 
 ---
 ## IV. Filtering and Enhancing Images
 Your images possess immense hidden gems waiting to be uncovered. OpenCV's filtering and enhancing capabilities will pave the way to reveal their full glamour.
+
+![Filter](https://static.packt-cdn.com/products/9781785283932/graphics/B04554_02_11.jpg)
+
 ### A. Applying various image filters (blur, sharpen, etc.)
 OpenCV's weaponry of image filters is here to liberate your imagination. Blur the boundaries between reality and dreams, sharpen your images to perfection, and experiment with various filter combinations to create visual poetry.
 ### B.	Enhancing image details with histogram equalization
