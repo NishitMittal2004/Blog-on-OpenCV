@@ -249,12 +249,37 @@ OpenCV's capabilities extend far beyond still images. Take a leap forward and ex
 ## VI. Image Segmentation and Feature Extraction
 Decode the complexities of image segmentation and feature extraction with the help of OpenCV's user-friendly tools. Let your imagination guide you in separating objects from backgrounds, extracting contours, and detecting the finest details.
 ### A.	Separating objects from backgrounds using thresholding
+
+![Thresholding](https://b2633864.smushcdn.com/2633864/wp-content/uploads/2021/04/opencv_thresholding_coins01.jpg?lossy=1&strip=1&webp=1)
+
 OpenCV's thresholding techniques grant you the power to separate objects from backgrounds effortlessly. Unleash your creativity as you isolate the desired subjects, granting them the limelight they deserve.
+
+```python
+# Convert the image to grayscale
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# Apply thresholding to binarize the image
+threshold_value = 100  # Adjust this value based on the image
+_, binary_image = cv2.threshold(gray_image, threshold_value, 255, cv2.THRESH_BINARY)
+```
 ### B.	Extracting contours and shape analysis techniques
+
+<img src="https://learnopencv.com/wp-content/uploads/2021/03/image-visualizing-simple-example-of-contour-detection.jpg" alt="Contours" width="700">
+
 OpenCV empowers you to unlock the mysteries hidden within image contours. Smoothly extract contours and explore shape analysis techniques. Uncover the forms that shape our world and reveal the secrets they hold.
+```python
+# Find contours in the binary image
+contours, _ = cv2.findContours(binary_image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+```
 ### C.	Feature detection and extraction (edges, corners, etc.)
 Commence on a journey of feature detection and extraction with OpenCV as your guide. Cast light upon your images through the detection of edges, corners, and other defining features. Shovel through the depths of visual aesthetics by emphasizing the characteristics that captivate the human eye.
+```python
+# Convert the image to grayscale
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
+# Edge detection using Canny edge detector
+edges = cv2.Canny(gray_image, 100, 200)
+```
 ---
 ## VII. Image Transformation and Geometric Operations
 Prepare to witness the magic of image transformation and geometric operations. OpenCV offers an enchanting selection of tools to warp reality, create panoramas, and perform geometric marvels.
