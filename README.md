@@ -201,12 +201,49 @@ blurred_image = cv2.GaussianBlur(noisy_image, ksize, 0)
 ---
 ## V. Object Detection and Tracking
 Unlock the extraordinary power of OpenCV's object detection and tracking capabilities. With OpenCV as your trusty companion, the world is your canvas as you paint your masterpiece of detection and tracking.
+
+![Obj Detection](https://miro.medium.com/v2/resize:fit:1400/0*s9JQ0GZ50QEljvjI.png)
+
 ### A. Detecting objects in an image using Haar cascades
 Harness the magic of Haar cascades to detect objects in your images with remarkable precision. From human faces to everyday objects, OpenCV's Haar cascades will disclose the secrets hidden within.
+
+In this example, we'll use a pre-trained Haar cascade classifier to detect faces in an image:
+
+```python
+import cv2
+import matplotlib.pyplot as plt
+
+# Load the pre-trained Haar cascade for face detection
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
+# Load the image
+image_path = 'path/to/your/image.jpg'
+image = cv2.imread(image_path)
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# Detect faces in the image
+faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
+# Draw rectangles around the detected faces
+for (x, y, w, h) in faces:
+    cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
+
+# Display the original image with face detections
+plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+plt.title('Face Detection')
+plt.show()
+
+```
+
 ### B.	Recognizing faces and eyes using OpenCV algorithms
 Become an expert in recognizing faces and eyes using OpenCV algorithms. OpenCV empowers you to dive into the world of facial recognition, unraveling the stories lurking behind every pair of eyes.
+
+<img src="https://raw.githubusercontent.com/NishitMittal2004/OpenCV_Project-Face_Detection/main/Face_Detected.png" alt="Face Recognition" width="500">
+
 ### C.	Tracking moving objects in videos and live feeds
 OpenCV's capabilities extend far beyond still images. Take a leap forward and explore motion tracking in videos and live feeds. Accurately track moving objects, trace their paths, and begin starting your journey through the field of dynamic imaging.
+
+![Motion detection](https://learn.g2.com/hubfs/G2CM_FI264_Learn_Article_Images_%5BObject_detection%5D_V1a.png)
 
 ---
 ## VI. Image Segmentation and Feature Extraction
