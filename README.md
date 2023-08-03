@@ -285,10 +285,28 @@ edges = cv2.Canny(gray_image, 100, 200)
 Prepare to witness the magic of image transformation and geometric operations. OpenCV offers an enchanting selection of tools to warp reality, create panoramas, and perform geometric marvels.
 ### A.	Image warping and perspective transformation
 Let your creativity take flight as you warp images and perform breathtaking perspective transformations. OpenCV lets you create captivating visual experiences that go beyond the ordinary and take your viewers to extraordinary worlds.
+
+<img src="https://i.ytimg.com/vi/Tm_7fGolVGE/maxresdefault.jpg" alt="Warping" width="700">
+
 ### B.	Image stitching and panorama creation
 Create captivating panoramas that stretch the boundaries of perception. OpenCV entitles you to stitch together multiple images seamlessly, capturing the breathtaking views that surround you.
+
+![Panorama](https://pyimagesearch.com/wp-content/uploads/2018/12/image_stitching_opencv_header.jpg)
+
 ### C.	Geometric operations (scaling, translation, etc.)
 With OpenCV, perform geometric operations that surpass the limitations of ordinary reality. Scale your images, translate them to new regions, and unleash the power of transformation at your fingertips.
+```python
+# Scaling
+# Define the scale factors for resizing (resize down by half)
+scale_x, scale_y = 0.5, 0.5
+scaled_image = cv2.resize(image, None, fx=scale_x, fy=scale_y, interpolation=cv2.INTER_LINEAR)
+
+# Translation
+# Define the translation matrix for shifting the image (translate right and down by 100 pixels)
+tx, ty = 100, 100
+translation_matrix = np.float32([[1, 0, tx], [0, 1, ty]])
+translated_image = cv2.warpAffine(image, translation_matrix, (image.shape[1], image.shape[0]))
+```
 
 ---
 ## VIII. Summary and Concluding Remarks
