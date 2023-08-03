@@ -24,7 +24,10 @@ Before we plunge into the journey with OpenCV, let's first get everything set up
 
 ### A. Installing OpenCV on different operating systems
 Installing OpenCV doesn't have to be a challenging or tedious task. Depending on your operating system, there are a few steps you need to follow to get OpenCV up and running.
-
+OpenCV can be directly downloaded and installed with the use of pip (package manager). To install OpenCV, just go to the command line and type the following command:
+```bash
+pip install opencv-python
+```
 ![Operating Systems](https://jumpcloud.com/wp-content/uploads/2016/07/hi-res-logos.png)
 
 ##### Windows
