@@ -2,7 +2,7 @@
 ---
 
 ## I. Introduction
-Image processing is a captivating realm that allows us to uncover hidden insights and unleash creativity through the manipulation of digital images. Various industries, from healthcare to entertainment, have been revolutionized by utilizing advanced and modern technology in this field. One such powerful technology that has earned its recognition is OpenCV.
+Image processing is a captivating realm that allows us to uncover hidden insights and unleash creativity by manipulating digital images. Various industries, from healthcare to entertainment, have been revolutionized by utilizing advanced and modern technology in this field. One such powerful technology that has earned its recognition is OpenCV.
 
 ![Intro to OpenCV](https://drive.google.com/uc?export=download&id=1N8DVn8cLEHd74WRPb5J4b-5f_6G2Ohpj)
 
@@ -49,10 +49,12 @@ pip install opencv-python
    
 ### B. Setting up the development environment
 Having a well-configured development environment is crucial when working with OpenCV. Let's get things in order:
-1.	Choose your preferred Integrated Development Environment (IDE), such as Visual Studio or JetBrains CLion.
+1.	Choose your preferred Integrated Development Environment (IDE), such as Visual Studio, JetBrains CLion, or PyCharm.
 2.	Create a new project and configure it to use OpenCV libraries.
 3.	Add the necessary include paths and link against the OpenCV libraries in your project settings.
 4.	Conjure your developer wizardry, and you're ready to begin your OpenCV adventures.
+
+![IDE](https://cdn.windowsreport.com/wp-content/uploads/2023/04/Visual-Studio-Vs-PyCharm-1.png)
 
 ### C. Introduction to the OpenCV library and its features
 OpenCV is a treasure inventory of powerful image-processing features, awaiting your exploration. Here are just a few enticing highlights:
@@ -71,6 +73,9 @@ OpenCV is a treasure inventory of powerful image-processing features, awaiting y
 
 ## III. Image Basics and Manipulation
 Now that we have OpenCV installed and our development environment all set up, let's dive into the captivating world of image basics and manipulation.
+
+![Img Manipulation](https://circuitdigest.com/sites/default/files/projectimage_tut/Image-Manipulations-in-Python-OpenCV.jpg)
+
 ### A. Understanding image representation in OpenCV
 In OpenCV, images are represented as multidimensional NumPy arrays, with each dimension corresponding to a different color channel. This representation allows us to efficiently perform various operations on images, from simple manipulations to complex transformations.
 ### B. Loading and saving images using OpenCV
