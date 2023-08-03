@@ -165,10 +165,38 @@ Your images possess immense hidden gems waiting to be uncovered. OpenCV's filter
 
 ### A. Applying various image filters (blur, sharpen, etc.)
 OpenCV's weaponry of image filters is here to liberate your imagination. Blur the boundaries between reality and dreams, sharpen your images to perfection, and experiment with various filter combinations to create visual poetry.
+
+Here's an example of how to apply blur, sharpen, and edge detection filters:
+```python
+# Image filters
+# Gaussian Blur
+gaussian_blur = cv2.GaussianBlur(image, (5, 5), 0)
+
+# Box Blur
+box_blur = cv2.boxFilter(image, -1, (5, 5))
+
+# Sharpening using kernel
+kernel = np.array([[-1, -1, -1],
+                   [-1,  9, -1],
+                   [-1, -1, -1]])
+sharpened_image = cv2.filter2D(image, -1, kernel)
+```
 ### B.	Enhancing image details with histogram equalization
 OpenCV empowers you to enhance the fine details of your images through histogram equalization. Emphasize the important aspects, fill them with vitality, and make your images truly come alive.
+```python
+# Apply histogram equalization
+equalized_image = cv2.equalizeHist(image)
+```
 ### C.	Removing noise from images using denoising techniques
 Bid farewell to the unwelcome presence of noise in your images. OpenCV provides an excess of denoising techniques through which unveil the true beauty of your images by burying noise in the deepest silence.
+
+1. Gaussian Blur:
+Gaussian blur is a simple filtering technique that convolves the image with a Gaussian kernel to reduce high-frequency noise.
+```python
+# Apply Gaussian blur
+ksize = (5, 5)  # Kernel size, larger values increase blurring effect
+blurred_image = cv2.GaussianBlur(noisy_image, ksize, 0)
+```
 
 ---
 ## V. Object Detection and Tracking
